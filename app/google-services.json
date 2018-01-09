@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "160904759213",
+    "firebase_url": "https://coupon2-40173.firebaseio.com",
+    "project_id": "coupon2-40173",
+    "storage_bucket": "coupon2-40173.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160904759213:android:71073822df14deeb",
+        "android_client_info": {
+          "package_name": "com.example.pc_22.coupon2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160904759213-q6is1nvv6o45ik54tinr0ub5498c1nr0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pc_22.coupon2",
+            "certificate_hash": "559fe0ef7623e345ca3cd786869abdd607a7e0a8"
+          }
+        },
+        {
+          "client_id": "160904759213-qmhlqfr3rfjl16dds7ngs411c64vqk3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSZ0pNLD903i5Cbdt4psWg2rW0d2vJVz8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160904759213-qmhlqfr3rfjl16dds7ngs411c64vqk3p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

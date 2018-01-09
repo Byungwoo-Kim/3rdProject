@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Coupon</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="number">
+        <item>관심사 1</item>
+        <item>헤어</item>
+        <item>네일</item>
+        <item>화장품</item>
+        <item>의류</item>
+        <item>악세서리</item>
+        <item>한식</item>
+        <item>중식</item>
+        <item>일식</item>
+        <item>양식</item>
+        <item>디저트</item>
+        <item>카페</item>
+        <item>문구</item>
+        <item>도서</item>
+        <item>차량</item>
+        <item>전자제품</item>
+    </string-array>
+
+    <string-array name="number2">
+        <item>관심사 2</item>
+        <item>헤어</item>
+        <item>네일</item>
+        <item>화장품</item>
+        <item>의류</item>
+        <item>악세서리</item>
+        <item>한식</item>
+        <item>중식</item>
+        <item>일식</item>
+        <item>양식</item>
+        <item>디저트</item>
+        <item>카페</item>
+        <item>문구</item>
+        <item>도서</item>
+        <item>차량</item>
+        <item>전자제품</item>
+    </string-array>
+
+    <string-array name="number3">
+        <item>관심사 3</item>
+        <item>헤어</item>
+        <item>네일</item>
+        <item>화장품</item>
+        <item>의류</item>
+        <item>악세서리</item>
+        <item>한식</item>
+        <item>중식</item>
+        <item>일식</item>
+        <item>양식</item>
+        <item>디저트</item>
+        <item>카페</item>
+        <item>문구</item>
+        <item>도서</item>
+        <item>차량</item>
+        <item>전자제품</item>
+    </string-array>
+    <string name="title_activity_coupon_list">CouponListActivity</string>
+</resources>
