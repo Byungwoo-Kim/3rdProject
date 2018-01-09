@@ -1,6 +1,5 @@
 package com.example.pc_22.coupon2;
 
-import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
@@ -9,9 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,7 +20,6 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
-import net.daum.mf.map.api.MapPOIItem;
 import net.daum.mf.map.api.MapPoint;
 
 import java.text.SimpleDateFormat;
@@ -42,8 +38,13 @@ public class sepActivity extends AppCompatActivity {
     Map<String, Object> data = new HashMap<>();
 
 
-    ListView listview;
-    ListViewAdapter_my adapter;
+    ListView listview;   //송하형꺼
+    ListView listview1;
+    ListView listview2;
+    ListViewAdapter_my adapter;//송하형꺼
+
+    ListViewAdapter adapter1;
+    ListViewAdapter2 adapter2;
     ArrayList<clist> arr;
     Boolean isok = false;
 
@@ -121,6 +122,7 @@ public class sepActivity extends AppCompatActivity {
         isresume = false;
         // 리스트뷰 참조 및 Adapter달기
         listview = (ListView) findViewById(R.id.listview1);
+
         listview.setAdapter(adapter);
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -284,28 +286,27 @@ public class sepActivity extends AppCompatActivity {
         }
 
         ////////////////////보유중인 쿠폰 리스트 시작
-        ListView listview;
-        ListViewAdapter adapter;
+
 
         // Adapter 생성
-        adapter = new ListViewAdapter();
+        adapter1 = new ListViewAdapter();
 
         // 리스트뷰 참조 및 Adapter달기
-        listview = (ListView) findViewById(R.id.listview1);
-        listview.setAdapter(adapter);
+        listview1 = (ListView) findViewById(R.id.listview1);
+        listview1.setAdapter(adapter1);
 
         // 첫 번째 아이템 추가.
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.bonobono1),
+        adapter1.addItem(ContextCompat.getDrawable(this, R.drawable.bonobono1),
                 "김밥 한줄 300원!", "2018년 1월 8일 21시 30분까지");
         // 두 번째 아이템 추가.
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.bonobono2),
+        adapter1.addItem(ContextCompat.getDrawable(this, R.drawable.bonobono2),
                 "콜라 무료!!!!!!!!", "2018년 1월 8일 21시 34분까지");
         // 세 번째 아이템 추가.
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.bonobono3),
+        adapter1.addItem(ContextCompat.getDrawable(this, R.drawable.bonobono3),
                 "가게 가져라!!!!", "2099년 12월 4일 11시 30분까지");
 
 
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listview1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View v, int position, long id) {
                 // get item
@@ -322,14 +323,13 @@ public class sepActivity extends AppCompatActivity {
 
 
         ///////////////////추천 쿠폰 리스트뷰 시작
-        ListView listview2;
-        ListViewAdapter2 adapter2;
+
 
         // Adapter 생성
         adapter2 = new ListViewAdapter2();
 
         // 리스트뷰 참조 및 Adapter달기
-        listview2 = (ListView) findViewById(R.id.listview2);
+        listview2 = (ListView) findViewById(R.id.listview_woo2);
         listview2.setAdapter(adapter2);
 
         //1. 파이썬 분석결과 가져오기(추천1,추천2,추천3)
@@ -374,7 +374,7 @@ public class sepActivity extends AppCompatActivity {
                 "가게 가져라!!!!", "2099년 12월 4일 11시 30분까지");
 
 
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listview2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View v, int position, long id) {
                 // get item

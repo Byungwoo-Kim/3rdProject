@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<android.support.constraint.ConstraintLayout tools:context="com.example.pc_22.coupon2.TempActivity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc_22.coupon2.TempActivity">
 
-<ListView android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/listview1"/>
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </android.support.constraint.ConstraintLayout>

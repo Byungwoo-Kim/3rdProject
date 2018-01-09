@@ -169,6 +169,7 @@ Boolean isResume = false;
             @Override
             public void onClick(View view) {
                 /*병우쓰면됨*/
+
                 inok=false;
                 Intent intent = new Intent(getApplicationContext(), sepActivity.class);
                 intent.putExtra("userid",userid);

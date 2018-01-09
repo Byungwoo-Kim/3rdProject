@@ -7,8 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="6"
-    tools:context="codefactory.learfletproject.screen_coupon"
-    tools:showIn="@layout/activity_screen_coupon">
+    tools:context="com.example.pc_22.coupon2.sepActivity"
+    tools:showIn="@layout/activity_sep">
 
     <TextView
         android:id="@+id/textView"
@@ -21,7 +21,7 @@
         android:textStyle="italic" />
 
     <ListView
-        android:id="@+id/listview1"
+        android:id="@+id/listview_woo1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.2" />
@@ -32,12 +32,12 @@
         android:layout_height="match_parent"
         android:layout_weight="1.8"
         android:background="@color/colorPrimary"
-        android:text="추천 쿠폰"
+        android:text="추천 쿠폰..."
         android:textSize="34sp"
         android:textStyle="italic" />
 
     <ListView
-        android:id="@+id/listview2"
+        android:id="@+id/listview_woo2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.2" />

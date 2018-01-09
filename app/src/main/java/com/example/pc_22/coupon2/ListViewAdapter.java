@@ -32,14 +32,6 @@ public class ListViewAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         final int pos = position;
-        if(position == 1){
-            //버튼 활성화
-        }else if(position == 2){
-            //버튼 비활성화
-        }
-        Log.v("값:",position+"");
-        Log.v("값2",convertView+"");
-        Log.v("값3",parent+"");
         final Context context = parent.getContext();
 
         // "listview_item" Layout을 inflate하여 convertView 참조 획득.
